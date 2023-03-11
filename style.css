@@ -1,0 +1,364 @@
+:root {
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    background-color: #bdd1de;
+}
+
+
+container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-areas: 
+         "nav nav nav nav"
+         "profile-pic quote quote quote"
+         "about about about about"
+         "papers papers papers papers"
+         "experiences experiences hobbies hobbies"
+         "blogs blogs blogs blogs"
+         "pictures pictures pictures pictures"
+         ;
+}
+div {
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: #c1d6e3;
+  height: auto;
+  opacity: 0.8;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+ }
+
+nav {
+    background-color: #9e23c3;
+    padding: 10px;
+    grid-area: nav;
+    min-height: 45px;
+}
+
+nav label {
+    float: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: bold solid 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+
+}
+
+.nav-items {
+    float: right;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    border: 1px solid #1d4657;
+    border-radius: 10px;
+}
+
+.nav-items:hover {
+    background-color: #a830bb;
+    color: white;
+}
+
+.dropdown {
+    display: none; 
+    visibility: hidden;
+}
+.block-title {
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+}
+
+
+.block-subtitle {
+    padding: 10px;
+}
+
+#profile-pic {
+    grid-area: profile-pic;
+    background-color: black;
+    
+   
+    border-radius: 5px;
+    padding-left: 5px;
+    background-color: black;
+   
+
+}
+
+#quote {
+    background-color: black;
+    color: rgb(46, 162, 129);
+    grid-area: quote;
+    font-size: 45px;
+    text-align: center;
+    padding: 55px;
+    padding: 15px;
+    
+   
+    color: rgb(27, 92, 112);
+    border: 5px solid #457b9d;
+    border-radius: 5px;
+    font-family: Brush Script MT,
+    Brush Script Std,
+    cursive;
+}
+
+#about {
+    background-color:  #80b8c4;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(27, 92, 112);
+    border: 5px solid #458e9d;
+    border-radius: 5px;
+    grid-area: about;
+}
+
+#about li {
+    padding: 5px;
+    text-align: justify;
+}
+
+#papers {
+    background-color: #cdcbcd71;
+    padding: 10px;
+    margin: 10px;
+    color:  rgb(22, 18, 18);
+    border: 5px solid #457b9d;
+    border-radius: 5px;
+    grid-area: papers;
+    min-height: 600px;
+    overflow-y: scroll;
+}
+
+
+  
+.sections_body blogs_grid {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding-left: 0px;
+    width : 10 px;
+    border: 2px solid  #705296;
+    border-radius: 5px;
+    background-color: #8293a4;
+    min-height:50px;
+    
+}
+
+
+.paper-title {
+    display: block;
+    font-size: 23px;
+    padding: 5px;
+    padding-right: 50px;
+}
+
+.paper-title a {
+    color: rgb(27, 27, 112);
+    float: right;
+}
+
+.paper-title a:hover {
+    color: rgb(255, 0, 255);
+}
+
+.more-papers a {
+    color: rgb(238, 0, 255);
+}
+
+.more-papers a:hover {
+    color: blue;
+}
+
+.paper-desc {
+    display: block;
+    padding: 5px;
+    text-align: justify;
+}
+
+.blog_container {
+    width:100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 auto ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 155px;
+    text-align: center;
+    justify-content: center;
+    min-height:100px;
+   
+}
+
+.blog_box {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 20%;
+    margin: 10 auto;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block; /* or inline-flex */
+    width: calc(30% - 7px); /* adjust as needed */
+    box-sizing: border-box; /* include padding and border in width */
+  }
+
+#experiences {
+    background-color:   #936daf;
+    border: 4px solid #426b84;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 8px;
+    grid-area: experiences;
+    color:  rgba(34, 225, 212, 0.938);
+}
+
+.exp-span {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    text-align: justify;
+}
+
+#hobbies {
+    background-color:   #809fc4;
+    border: 5px solid #457b9d;
+    color:  rgb(27, 27, 112);
+    border-radius: 5px;
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    grid-area: hobbies;
+}
+
+.hobbies-list {
+    padding: 5px;
+    margin: 5px;
+}
+
+#blogs {
+    padding: 5px;
+    border: 5px solid #457b9d;
+    border-radius: 5px;
+    margin: 5px;
+    padding-right: 25px;
+    color:  rgb(27, 27, 112);
+    background-color:  #80aac4;
+    grid-area: blogs;
+}
+
+#pictures {
+    padding: 10px;
+    border: 5px solid #457b9d;
+    border-radius: 5px;
+    margin: 10px;
+    color:  rgb(27, 27, 112);
+    background-color:   #80bbc4;
+    text-align: center;
+    grid-area: pictures;
+    max-height: 400px;
+    min-height: 400px;
+    overflow-y: scroll;
+}
+
+.pic-img {
+    height: 300px;
+    width: 300px;
+    
+    padding: 8px;
+    text-align: center;
+    border-radius: 10%;
+    background-color: #572796;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "nav"
+            "profile-pic"
+            "quote"
+            "about"
+            "papers"
+            "experiences"
+            "hobbies"
+            "blogs"
+            "pictures"
+        ;
+        gap: none;
+    }
+
+    .nav-items{
+        display: none;
+        visibility: hidden;
+    }
+
+    .dropdown {
+        display: block;
+        visibility: visible;
+        padding: 10px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #162842;
+        min-width: 450px;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        margin: 10px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+        color: white;
+        background-color:#4030bb;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        float: right;
+    }
+
+    .nav-button {
+        color: white;
+        background-color: #1d3557;
+        border-radius: 5px;
+        float: right;
+    }
+
+    #profile-pic {
+        text-align: center;
+        margin: none;
+    }
+
+    #quote {
+        font-size: 30px;
+    }
+
+    #papers {
+        min-height: 1000px;
+        overflow-y: scroll;
+    }
+
+    .paper-title {
+        display: block;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+}
